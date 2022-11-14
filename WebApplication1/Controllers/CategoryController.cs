@@ -17,6 +17,7 @@ namespace WebApplication1.Controllers
         public IActionResult Index()
         {
             IEnumerable<Category> objCategoryList = _db.Categories;
+            var a = _db.Categories;
             return View(objCategoryList);
         }
     }
